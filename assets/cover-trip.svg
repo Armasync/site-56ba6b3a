@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="مدينة زرقاء على سفح جبل">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe4f7"/><stop offset="1" stop-color="#f3e6d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="270" fill="url(#sky)"/>
+  <path d="M0 168l96-78 74 58 62-96 88 96 76-58 84 78v102H0V168Z" fill="#8fa8bd"/>
+  <path d="M480 196l-92-64-70 52-72-40-88 62-60-34-98 54v44h480v-74Z" fill="#5f7f9c"/>
+  <g>
+    <rect x="60" y="176" width="46" height="70" rx="4" fill="#2f6ea8"/>
+    <rect x="114" y="158" width="52" height="88" rx="4" fill="#3a7cb8"/>
+    <rect x="174" y="182" width="42" height="64" rx="4" fill="#2f6ea8"/>
+    <rect x="224" y="146" width="58" height="100" rx="4" fill="#3f86c2"/>
+    <rect x="290" y="176" width="48" height="70" rx="4" fill="#2f6ea8"/>
+    <rect x="346" y="160" width="54" height="86" rx="4" fill="#3a7cb8"/>
+  </g>
+  <g fill="#fdf6e3">
+    <rect x="72" y="190" width="10" height="12" rx="2"/><rect x="90" y="190" width="10" height="12" rx="2"/>
+    <rect x="128" y="172" width="10" height="12" rx="2"/><rect x="146" y="172" width="10" height="12" rx="2"/>
+    <rect x="238" y="162" width="12" height="14" rx="2"/><rect x="258" y="162" width="12" height="14" rx="2"/>
+    <rect x="360" y="176" width="10" height="12" rx="2"/><rect x="378" y="176" width="10" height="12" rx="2"/>
+  </g>
+  <rect x="0" y="246" width="480" height="24" fill="#c2a878"/>
+</svg>

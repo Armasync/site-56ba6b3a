@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>القراءة البطيئة: اقرأ أقل وافهم أكثر — أفق</title>
+<meta name="description" content="طريقة من ثلاث مراحل للقراءة البطيئة: التمهيد والتلخيص والمراجعة، مع أشهر ثلاثة أسئلة عملية تجعل ما تقرؤه يبقى معك.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Cpath d='M14 40a18 18 0 0 1 36 0' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='22' r='5' fill='%23fbbf24'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="34" height="34"><rect width="64" height="64" rx="14" fill="currentColor"/><path d="M14 40a18 18 0 0 1 36 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="22" r="5" fill="#fbbf24"/></svg>
+      </span>
+      <span class="brand-text"><strong>أفق</strong><small>مدونة للمهتمّين بالتفاصيل</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="../index.html#articles">المقالات</a>
+      <a href="../index.html#categories">التصنيفات</a>
+      <a href="../index.html#about">عن المدونة</a>
+      <a href="../index.html#contact">تواصل</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="تبديل الوضع الليلي" title="الوضع الليلي">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></g></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="currentColor"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap article-header">
+    <a class="back-link" href="../index.html#articles">← كل المقالات</a>
+    <span class="tag">قراءة</span>
+    <h1>القراءة البطيئة: اقرأ أقل وافهم أكثر</h1>
+    <p class="article-lead">ليست المهمة إنهاء أكبر عدد من الكتب، بل أن يتغيّر شيء في طريقة عملك بعد الكتاب. جرّب هذه الطريقة ثلاث مرات وراقب الفرق: كتاب واحد بعمق أنفع من خمسة بتصفّح سريع.</p>
+    <p class="meta">
+      <time datetime="2024-12-19">١٩ ديسمبر ٢٠٢٤</time><span class="dot"></span>
+      <span>٨ دقائق قراءة</span><span class="dot"></span><span>بقلم فريق أفق</span>
+    </p>
+  </div>
+
+  <div class="wrap article-layout">
+    <article class="article-body">
+      <img src="../assets/cover-reading.svg" alt="كتاب مفتوح مع أسطر نصية ملوّنة" width="480" height="270">
+
+      <p>القراءة السريعة مفيدة للمحتوى الذي نريد فقط أن نأخذ منه عنواناً أو فكرة. أما الكتب التي نريد أن تغيّر مهارة عندنا فتحتاج نوعاً آخر من القراءة: أبطأ، وأقل، وأكثر تركيزاً.</p>
+
+      <h2 id="why">لماذا ننسى ما نقرؤه؟</h2>
+      <p>لثلاثة أسباب متكررة:</p>
+      <ul>
+        <li><strong>التصفّح السلبي:</strong> نمرّ على العين دون أن نسأل سؤالاً حول ما نقرأ.</li>
+        <li><strong>الغياب عن التطبيق:</strong> لا نصوغ الفكرة بأسلوبنا، فتبقى معلّقة في الذاكرة القصيرة.</li>
+        <li><strong>الكثرة بلا انتقاء:</strong> نبدأ كتاباً كل أسبوع فلا يكتمل أي منها.</li>
+      </ul>
+      <p>لذلك تعمل القراءة البطيئة على ثلاث مراحل: قبل، أثناء، وبعد.</p>
+
+      <h2 id="phase-1">المرحلة الأولى: التمهيد (١٠ دقائق)</h2>
+      <p>قبل أن تقرأ صفحة واحدة، اعمل هذا الفحص السريع:</p>
+      <ol>
+        <li>اقرأ الفهرس كاملاً، واختر منه ثلاثة فصول تهمّك فعلاً.</li>
+        <li>اقرأ مقدمة الكتاب وخاتمته — الخاتمة تعطيك الخريطة كاملة.</li>
+        <li>اكتب على ورقة سؤالاً واحداً: «ماذا أريد أن أخرج به من هذا الكتاب؟».</li>
+      </ol>
+      <div class="callout">
+        <p>الكتاب الذي لا تستطيع صياغة سؤال له، ليس كتابك الآن. أعده إلى القائمة بلا شعور بالذنب.</p>
+      </div>
+
+      <h2 id="phase-2">المرحلة الثانية: القراءة السؤالية</h2>
+      <p>اقرأ بقلب هادئ، وأوقف كل ما يشتّت: هاتفك في غرفة أخرى، ومتصفحك مغلق. ثم التزم بأربع قواعد:</p>
+      <ul>
+        <li><strong>لا تُعلّم إلا ما تستطيع شرحه:</strong> ضع خطاً تحت جملة فقط إن كان بوسك تفسيرها لصديق.</li>
+        <li><strong>اسأل بعد كل فصل:</strong> ما الفكرة التي لو نسيتها أضعت الفصل كله؟</li>
+        <li><strong>اكتب في الهامش بحرفك:</strong> التلخيص بالفكرة المكتوبة أقوى من مجرّد الخطّ تحت النص.</li>
+        <li><strong>لا تقرأ أكثر من ٢٥ دقيقة متصلة:</strong> ثم خمس دقائق راحة بلا شاشة.</li>
+      </ul>
+
+      <h2 id="phase-3">المرحلة الثالثة: الفلترة بعد أسبوع</h2>
+      <p>هذه المرحلة هي الأهم، ويكتفي بها معظم القرّاء عن غيرها:</p>
+      <ol>
+        <li>بعد إغلاق الكتاب بأسبوع، اكتب من الذاكرة أهم ثلاث أفكار وصلتك.</li>
+        <li>افتح الكتاب وقارن: أتذكرت الأفكار المهمة أم أفكاراً هامشية؟</li>
+        <li>اسأل: ما الذي تغيّر في عملي فعلاً بسبب هذا الكتاب؟</li>
+        <li>اختر عملاً واحداً مُنفذاً هذا الأسبوع، لا أكثر.</li>
+      </ol>
+
+      <h2 id="notes">نظام ملاحظات بسيط لا يحتاج برامج</h2>
+      <table>
+        <thead><tr><th>العنصر</th><th>الوظيفة</th><th>الحد الأقصى</th></tr></thead>
+        <tbody>
+          <tr><td>الفكرة</td><td>الجملة الأساسية بأسلوبك</td><td>سطر واحد</td></tr>
+          <tr><td>المصدر</td><td>اسم الكتاب والصفحة</td><td>سطر واحد</td></tr>
+          <tr><td>التطبيق</td><td>ماذا سأفعل بها هذا الأسبوع</td><td>سطران</td></tr>
+        </tbody>
+      </table>
+      <p>صفحة واحدة لكل كتاب كافية. أما الكتب التي أعطتك أكثر من ذلك، فخصّص لها وقتاً ثانياً كاملاً بدل تلخيص حرفي لا تقرؤه بعد يومين.</p>
+
+      <h2 id="how-many">كم كتاباً في السنة؟</h2>
+      <p>الرقم غير مهم، لكنه مفيد كمعيار. غالبية القرّاء الجدّيين يقرؤون بين ١٢ و ٢٤ كتاباً سنوياً، أي كتاب إلى كتابين شهرياً. الفرق بين ١٢ و ٣٦ لا يأتي من السرعة، بل من استبعاد ما لا يخدم هدفك لا أكثر.</p>
+      <blockquote>
+        <p>اقرأ أقل وطبّق أكثر. الكتب التي لا تترك أثراً في تصرفاتك هي كتب قرأتها ولم تقرأها.</p>
+      </blockquote>
+
+      <div class="takeaways">
+        <h2>الخلاصة في ثلاث نقاط</h2>
+        <ol>
+          <li>قبل القراءة: فهرس ومقدمة وخاتمة، ثم سؤال واحد مكتوب.</li>
+          <li>أثناء القراءة: علّم ما تستطيع شرحه فقط، ولخّص كل فصل في سطر.</li>
+          <li>بعد أسبوع: اكتب ثلاث أفكار من الذاكرة، ونفّذ تطبيقاً واحداً.</li>
+        </ol>
+      </div>
+    </article>
+
+    <aside class="side-panel">
+      <h3>في هذه الصفحة</h3>
+      <ul class="toc">
+        <li><a href="#why">لماذا ننسى ما نقرؤه؟</a></li>
+        <li><a href="#phase-1">١. التمهيد</a></li>
+        <li><a href="#phase-2">٢. القراءة السؤالية</a></li>
+        <li><a href="#phase-3">٣. الفلترة بعد أسبوع</a></li>
+        <li><a href="#notes">نظام الملاحظات</a></li>
+        <li><a href="#how-many">كم كتاباً في السنة؟</a></li>
+      </ul>
+      <div class="author-box">
+        <span class="author-avatar" aria-hidden="true">أ</span>
+        <div><strong>فريق أفق</strong><p>نكتب أدلة عملية عن الويب والمحتوى العربي.</p></div>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="wrap prev-next" aria-label="مقالات أخرى">
+    <a href="keyboard-shortcuts.html"><small>المقال السابق</small><strong>١٠ اختصارات لوحة مفاتيح</strong></a>
+    <a class="next-link" href="better-sleep.html"><small>المقال التالي</small><strong>نوم أعمق في ٧ خطوات عملية</strong></a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><strong>أفق</strong><p class="muted">مقالات عربية عن التقنية والإنتاجية والحياة اليومية.</p></div>
+    <ul class="footer-links">
+      <li><a href="../index.html#articles">المقالات</a></li>
+      <li><a href="../index.html#categories">التصنيفات</a></li>
+      <li><a href="../index.html#about">عن المدونة</a></li>
+      <li><a href="../index.html#contact">تواصل</a></li>
+    </ul>
+    <p class="muted small">© <span id="year">٢٠٢٥</span> مدونة أفق — محتوى مكتوب بالعربية.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

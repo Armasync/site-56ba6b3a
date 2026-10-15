@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="كتاب مفتوح">
+  <rect width="480" height="270" fill="#f7f4ec"/>
+  <circle cx="240" cy="128" r="104" fill="#4f46e5" opacity=".1"/>
+  <g>
+    <path d="M64 78c46-18 92-18 138 4v140c-46-22-92-22-138-4V78Z" fill="#ffffff" stroke="#171a2b" stroke-width="3"/>
+    <path d="M416 78c-46-18-92-18-138 4v140c46-22 92-22 138-4V78Z" fill="#ffffff" stroke="#171a2b" stroke-width="3"/>
+    <path d="M202 82v140" stroke="#171a2b" stroke-width="3"/>
+  </g>
+  <g stroke="#4f46e5" stroke-width="4" stroke-linecap="round" opacity=".7">
+    <path d="M92 106h84M92 128h84M92 150h62"/>
+  </g>
+  <g stroke="#7c3aed" stroke-width="4" stroke-linecap="round" opacity=".7">
+    <path d="M304 106h84M304 128h84M326 150h62"/>
+  </g>
+  <rect x="206" y="52" width="68" height="18" rx="9" fill="#fbbf24"/>
+</svg>

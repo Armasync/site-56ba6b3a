@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="لوحة مفاتيح">
+  <rect width="480" height="270" fill="#13162a"/>
+  <g fill="#2c3154">
+    <rect x="42" y="70" width="56" height="52" rx="10"/>
+    <rect x="108" y="70" width="56" height="52" rx="10"/>
+    <rect x="174" y="70" width="56" height="52" rx="10"/>
+    <rect x="240" y="70" width="56" height="52" rx="10"/>
+    <rect x="306" y="70" width="56" height="52" rx="10"/>
+    <rect x="372" y="70" width="66" height="52" rx="10"/>
+    <rect x="42" y="134" width="66" height="52" rx="10"/>
+    <rect x="118" y="134" width="56" height="52" rx="10"/>
+    <rect x="184" y="134" width="56" height="52" rx="10"/>
+    <rect x="250" y="134" width="56" height="52" rx="10"/>
+    <rect x="316" y="134" width="122" height="52" rx="10"/>
+  </g>
+  <rect x="42" y="70" width="56" height="52" rx="10" fill="#4f46e5"/>
+  <rect x="184" y="134" width="56" height="52" rx="10" fill="#fbbf24"/>
+  <rect x="316" y="134" width="122" height="52" rx="10" fill="#7c3aed"/>
+  <rect x="118" y="200" width="250" height="34" rx="10" fill="#2c3154"/>
+</svg>

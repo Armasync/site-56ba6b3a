@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الخط العربي على الويب: دليل عملي للواجهات — أفق</title>
+<meta name="description" content="دليل عملي لاختيار الخط العربي على الويب: حجم السطر، ارتفاع السطر، المسافات، الاتجاه والاتجاه المختلط، وأخطاء شائعة في الواجهات العربية.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Cpath d='M14 40a18 18 0 0 1 36 0' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='22' r='5' fill='%23fbbf24'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="34" height="34"><rect width="64" height="64" rx="14" fill="currentColor"/><path d="M14 40a18 18 0 0 1 36 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="22" r="5" fill="#fbbf24"/></svg>
+      </span>
+      <span class="brand-text"><strong>أفق</strong><small>مدونة للمهتمّين بالتفاصيل</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="../index.html#articles">المقالات</a>
+      <a href="../index.html#categories">التصنيفات</a>
+      <a href="../index.html#about">عن المدونة</a>
+      <a href="../index.html#contact">تواصل</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="تبديل الوضع الليلي" title="الوضع الليلي">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></g></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="currentColor"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap article-header">
+    <a class="back-link" href="../index.html#articles">← كل المقالات</a>
+    <span class="tag">تصميم</span>
+    <h1>الخط العربي على الويب: دليل عملي للواجهات</h1>
+    <p class="article-lead">الخط العربي على الويب لا يحتاج موهبة تصميم، بل معرفة قواعد قليلة: حجم مناسب، ارتفاع سطر أرحب، مسافات بين الحروف، واتجاه محسوب. هذه القواعد السبع تكفي لتصميم واجهة عربية واضحة.</p>
+    <p class="meta">
+      <time datetime="2024-11-24">٢٤ نوفمبر ٢٠٢٤</time><span class="dot"></span>
+      <span>١٢ دقيقة قراءة</span><span class="dot"></span><span>بقلم فريق أفق</span>
+    </p>
+  </div>
+
+  <div class="wrap article-layout">
+    <article class="article-body">
+      <img src="../assets/cover-type.svg" alt="حروف عربية بخط سميك مع خطوط تصميمية" width="480" height="270">
+
+      <p>كثير من الواجهات العربية تبدو مترهّلة، ليس لأن الخط سيئ، بل لأن الإعدادات منسوخة من تصميم لاتيني. الحروف العربية متصلة وأفقية الطابع، ولها ارتفاع بصري مختلف، فتحتاج قيماً مختلفة قليلاً.</p>
+
+      <h2 id="size">١. حجم النص: ١٧–١٩ بكسل للنص الأساسي</h2>
+      <p>النص العربي يُقرأ أصغر من نظيره اللاتيني بالحجم نفسه. القيم العملية:</p>
+      <table>
+        <thead><tr><th>العنصر</th><th>الحجم المقترح</th><th>الوزن</th></tr></thead>
+        <tbody>
+          <tr><td>النص الأساسي</td><td>١٧–١٩px</td><td>400</td></tr>
+          <tr><td>العنوان الرئيسي</td><td>٣٢–٤٤px</td><td>700–800</td></tr>
+          <tr><td>عنوان فرعي</td><td>٢٢–٢٦px</td><td>700</td></tr>
+          <tr><td>ملاحظات وتذييل</td><td>١٤–١٥px</td><td>400</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="line-height">٢. ارتفاع السطر: ١.٧ إلى ١.٩</h2>
+      <p>أهم إعداد في الصفحة العربية. الحروف المرتفعة والمنخفضة تحتاج مساحة رأسية حتى لا تتلامس الأسطر:</p>
+      <pre><code>body {
+  font-size: 18px;
+  line-height: 1.85;
+}</code></pre>
+      <p>المقال الطويل يتحمّل الارتفاع الكبير بل يستفيد منه، أما العناوين فتقلّ فيه القيمة إلى ١.٣–١.٤ كي تبقى متماسكة.</p>
+
+      <h2 id="letter-spacing">٣. المسافات بين الحروف: صفر لا موجب</h2>
+      <p>زيادة <code>letter-spacing</code> تفسد الصلة بين الحروف العربية وتجعل الكلمة مفكّكة. الأصل أن تبقى <code>0</code>، ويُسمح بقيمة سالبة صغيرة جداً <code>-0.01em</code> في العناوين لو بدت متراخية.</p>
+      <div class="callout">
+        <p>لا تنقل أبداً خصائص التصميم اللاتيني كما هي إلى النص العربي، خصوصاً فوق الأحرف، المسافات بين الحروف، وتحويل النص إلى أحرف كبيرة — لا معنى للأخيرة في العربية.</p>
+      </div>
+
+      <h2 id="font">٤. كيف تختار الخط: ثلاثة معايير</h2>
+      <ol>
+        <li><strong>نسب العائلة:</strong> اختر خطاً بوزنين على الأقل (٤٠٠ و٧٠٠)، وتحقّق من وجودهما حقاً لا من الاسم فقط.</li>
+        <li><strong>الوضوح على الشاشة:</strong> جرّب الخط في حجم ١٦px فعلياً؛ بعض الخطوط الجميلة في العناوين غير مقروءة في الفقرات.</li>
+        <li><strong>الأرقام:</strong> تحقّق من شكل الأرقام (عربية ٠١٢٣ أم هندية ١٢٣٤) ومن وجود الأقواس والرموز متوافقة.</li>
+      </ol>
+      <p>خط واحد للنصوص وآخر للعناوين كافٍ. ويكفي وزنان لكل خط. أما تحميل ستة أوزان فذلك ثمن بطيء لا يلاحظه أحد إلا زمن انتظار الصفحة.</p>
+
+      <h2 id="rtl">٥. الاتجاه: من الخصائص المنطقية بدل اليسار واليمين</h2>
+      <p>الخطر الأكبر في واجهة عربية أن تجد نفسك تستخدم <code>margin-left</code> ثم تفشل عند تحويل الاتجاه. الحل هو الخصائص المنطقية:</p>
+      <table>
+        <thead><tr><th>بدلاً من</th><th>استخدم</th><th>ماذا تعني في RTL</th></tr></thead>
+        <tbody>
+          <tr><td><code>margin-left</code></td><td><code>margin-inline-start</code></td><td>الهامش على اليمين</td></tr>
+          <tr><td><code>padding-right</code></td><td><code>padding-inline-end</code></td><td>الحشو على اليسار</td></tr>
+          <tr><td><code>text-align: left</code></td><td><code>text-align: start</code></td><td>محاذاة إلى اليمين</td></tr>
+          <tr><td><code>border-left</code></td><td><code>border-inline-start</code></td><td>إطار على اليمين</td></tr>
+        </tbody>
+      </table>
+      <p>ووثّق الاتجاه في الوسم نفسه: <code>&lt;html lang="ar" dir="rtl"&gt;</code>. لا تعتمد على CSS وحده لهذا.</p>
+
+      <h2 id="mixed">٦. النص المختلط: عربي + إنجليزي + أرقام</h2>
+      <p>أكثر ما يشوّه الصفحات العربية من هذا الاختلاط. قاعدتان تكفيان:</p>
+      <ul>
+        <li><strong>للكلمة الإنجليزية:</strong> غلّفها بـ <code>&lt;span dir="ltr"&gt;</code> أو استخدم عنصراً داخلياً <code>lang="en"</code> إن كنت بحاجة إلى نطق صحيح للقارئ الآلي.</li>
+        <li><strong>للمقاطع الطويلة (كود، روابط):</strong> اضبط الاتجاه إلى <code>ltr</code> واجعل المحاذاة إلى اليسار داخل الصندوق، مع بقاء العنصر في مكانه الصحيح من التخطيط.</li>
+      </ul>
+      <p>العلامات الرقمية المرتبطة بنص عربي مثل «٥ دقائق» لا تحتاج أي تعديل، فالمتصفح يحلّها تلقائياً.</p>
+
+      <h2 id="polish">٧. تفاصيل تصنع الفرق</h2>
+      <ul>
+        <li><strong>عرض سطر مريح:</strong> بين ٦٠ و ٧٥ حرفاً؛ استخدم <code>max-width: 65ch</code> لمحتوى المقال.</li>
+        <li><strong>التباعد بين العناصر:</strong> ارتفاع أوسع للسطور يعني حاجة أقل للهوامش بين الفقرات؛ ١em إلى ١.٢em بين الفقرات جيد.</li>
+        <li><strong>حالات التركيز:</strong> إطار مرئي واضح <code>:focus-visible</code> لأن التنقل بلوحة المفاتيح شائع في العربية أيضاً.</li>
+        <li><strong>الاختبار بالحقيقي:</strong> اقرأ فقرة كاملة بصوت داخلي؛ إن احتجت إعادة قراءة جملة، فالمشكلة في الإعدادات لا في النص.</li>
+      </ul>
+
+      <div class="takeaways">
+        <h2>الخلاصة في ثلاث نقاط</h2>
+        <ol>
+          <li>ابدأ بحجم ١٨px وارتفاع سطر ١.٨٥، ثم عدّل قليلاً حسب الخط الذي اخترته.</li>
+          <li>لا تستخدم خصائص اليسار واليمين؛ اعتمد على الخصائص المنطقية ليعمل التخطيط في الاتجاهين.</li>
+          <li>وثّق <code lang="en">dir="rtl"</code> في وسم <code>html</code>، وغلف المقاطع الإنجليزية والأكواد باتجاه مستقل.</li>
+        </ol>
+      </div>
+    </article>
+
+    <aside class="side-panel">
+      <h3>في هذه الصفحة</h3>
+      <ul class="toc">
+        <li><a href="#size">١. حجم النص</a></li>
+        <li><a href="#line-height">٢. ارتفاع السطر</a></li>
+        <li><a href="#letter-spacing">٣. مسافات الحروف</a></li>
+        <li><a href="#font">٤. اختيار الخط</a></li>
+        <li><a href="#rtl">٥. الاتجاه</a></li>
+        <li><a href="#mixed">٦. النص المختلط</a></li>
+        <li><a href="#polish">٧. تفاصيل تصنع الفرق</a></li>
+      </ul>
+      <div class="author-box">
+        <span class="author-avatar" aria-hidden="true">أ</span>
+        <div><strong>فريق أفق</strong><p>نكتب أدلة عملية عن الويب والمحتوى العربي.</p></div>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="wrap prev-next" aria-label="مقالات أخرى">
+    <a href="chefchaouen.html"><small>المقال السابق</small><strong>شفشاون بعيداً عن صور الإنترنت</strong></a>
+    <a class="next-link" href="start-a-blog.html"><small>المقال التالي</small><strong>كيف تبدأ مدونة ناجحة من الصفر؟</strong></a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><strong>أفق</strong><p class="muted">مقالات عربية عن التقنية والإنتاجية والحياة اليومية.</p></div>
+    <ul class="footer-links">
+      <li><a href="../index.html#articles">المقالات</a></li>
+      <li><a href="../index.html#categories">التصنيفات</a></li>
+      <li><a href="../index.html#about">عن المدونة</a></li>
+      <li><a href="../index.html#contact">تواصل</a></li>
+    </ul>
+    <p class="muted small">© <span id="year">٢٠٢٥</span> مدونة أفق — محتوى مكتوب بالعربية.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

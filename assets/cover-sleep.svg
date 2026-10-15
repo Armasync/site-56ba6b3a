@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="قمر ووسادة وساعات نوم">
+  <rect width="480" height="270" fill="#141a33"/>
+  <circle cx="368" cy="76" r="46" fill="#fbbf24"/>
+  <circle cx="348" cy="66" r="40" fill="#141a33"/>
+  <g fill="#ffffff" opacity=".8">
+    <circle cx="86" cy="52" r="3"/><circle cx="150" cy="86" r="2.5"/><circle cx="228" cy="44" r="3"/>
+    <circle cx="300" cy="110" r="2.5"/><circle cx="430" cy="170" r="3"/><circle cx="60" cy="140" r="2.5"/>
+  </g>
+  <rect x="60" y="168" width="360" height="60" rx="30" fill="#2c3154"/>
+  <rect x="96" y="150" width="150" height="56" rx="22" fill="#4f46e5"/>
+  <rect x="240" y="176" width="160" height="30" rx="15" fill="#3a4170"/>
+  <g stroke="#e8e6fd" stroke-width="6" stroke-linecap="round">
+    <path d="M108 120q16-26 32 0q16 26 32 0"/>
+  </g>
+</svg>

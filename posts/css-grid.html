@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مدخل إلى CSS Grid: صمّم تخطيط الصفحة في سطور — أفق</title>
+<meta name="description" content="شرح عملي لـ CSS Grid بالعربية: الأعمدة والصفوف، المسافات، الأماكن المسمّاة، والتخطيط المتجاوب بأمثلة قابلة للنسخ.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Cpath d='M14 40a18 18 0 0 1 36 0' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='22' r='5' fill='%23fbbf24'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="34" height="34"><rect width="64" height="64" rx="14" fill="currentColor"/><path d="M14 40a18 18 0 0 1 36 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="22" r="5" fill="#fbbf24"/></svg>
+      </span>
+      <span class="brand-text"><strong>أفق</strong><small>مدونة للمهتمّين بالتفاصيل</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="../index.html#articles">المقالات</a>
+      <a href="../index.html#categories">التصنيفات</a>
+      <a href="../index.html#about">عن المدونة</a>
+      <a href="../index.html#contact">تواصل</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="تبديل الوضع الليلي" title="الوضع الليلي">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></g></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="currentColor"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap article-header">
+    <a class="back-link" href="../index.html#articles">← كل المقالات</a>
+    <span class="tag">تقنية</span>
+    <h1>مدخل إلى CSS Grid: صمّم تخطيط الصفحة في سطور</h1>
+    <p class="article-lead">قبل Grid كنا نبني التخطيطات بالطفو (float) مع حِيَل إزالة التأثير، أو بالجداول التي لا علاقة لها بالتخطيط. اليوم يكفي إعلان عدد الأعمدة ومسافاتها. هذا شرح عملي من الأساس حتى تخطيط متجاوب كامل.</p>
+    <p class="meta">
+      <time datetime="2025-01-05">٥ يناير ٢٠٢٥</time><span class="dot"></span>
+      <span>١١ دقيقة قراءة</span><span class="dot"></span><span>بقلم فريق أفق</span>
+    </p>
+  </div>
+
+  <div class="wrap article-layout">
+    <article class="article-body">
+      <img src="../assets/cover-grid.svg" alt="رسم لشبكة من مستطيلات ملوّنة تمثّل أعمدة وصفوف CSS Grid" width="480" height="270">
+
+      <h2 id="what">ما الفرق بين Grid و Flexbox؟</h2>
+      <p>القاعدة المختصرة: <strong>Flexbox يوزّع عناصر في اتجاه واحد</strong> (صف أو عمود)، و<strong>Grid يبني شبكة في اتجاهين</strong> (صفوف وأعمدة معاً). لذلك: القوائم والأزرار وشريط التنقل → Flexbox. أما هيكل الصفحة وبطاقات المنتجات وصفحة المقال → Grid.</p>
+
+      <h2 id="basics">الأساسيات: الأعمدة والصفوف والمسافة</h2>
+      <p>لتبدأ، أعلن عنصر كحاوية شبكة ثم حدّد أعمدتها:</p>
+      <pre><code>.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}</code></pre>
+      <p>الوحدة <code>fr</code> تعني «جزء من المساحة المتاحة». فـ <code>repeat(3, 1fr)</code> أي ثلاثة أعمدة متساوية. ولاحظ أن <code>gap</code> يضع المسافة بين الخلايا دون أن تضيف هوامش يدوية لكل عنصر.</p>
+
+      <h2 id="responsive">تخطيط متجاوب بلا استعلامات وسائط</h2>
+      <p>أغمض ميزة في Grid: <code>auto-fit</code> مع <code>minmax</code> يجعلك تتخلى عن غالبية استعلامات الوسائط:</p>
+      <pre><code>.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}</code></pre>
+      <p>الترجمة الحرفية: «املأ الصف بأكبر عدد ممكن من الأعمدة، بحيث لا يقل عرض العمود عن ٢٦٠ بكسل». على شاشة عريضة ستحصل على ثلاثة أو أربعة أعمدة، وعلى هاتف على عمود واحد، دون سطر واحد من CSS إضافي.</p>
+
+      <h2 id="areas">الأماكن المسمّاة: التخطيط كما تراه</h2>
+      <p>يمكنك رسم التخطيط بأسماء واضحة، ثم توزيع العناصر عليه:</p>
+      <pre><code>.layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content side"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.layout header { grid-area: header; }
+.layout main   { grid-area: content; }
+.layout aside  { grid-area: side; }
+.layout footer { grid-area: footer; }</code></pre>
+      <p>الفائدة الكبيرة هنا هي الوضوح: من يقرأ الكود يفهم الشكل. وعلى الهاتف يكفي أن تعيد تعريف الأماكن في عمود واحد:</p>
+      <pre><code>@media (max-width: 760px) {
+  .layout {
+    grid-template-areas: "header" "content" "side" "footer";
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+
+      <h2 id="align">المحاذاة: متى تستخدم أي خاصية</h2>
+      <p>الخلط بين خصائص المحاذاة هو أكثر ما يحيّر المبتدئين. الجدول التالي يحسم الأمر:</p>
+      <table>
+        <thead><tr><th>الخاصية</th><th>تُوضع على</th><th>ماذا تتحكم فيه</th></tr></thead>
+        <tbody>
+          <tr><td><code>justify-items</code></td><td>الحاوية</td><td>موضع كل عنصر داخل خليته أفقياً</td></tr>
+          <tr><td><code>align-items</code></td><td>الحاوية</td><td>موضع كل عنصر داخل خليته رأسياً</td></tr>
+          <tr><td><code>place-items</code></td><td>الحاوية</td><td>اختصار للاثنتين معاً</td></tr>
+          <tr><td><code>justify-content</code></td><td>الحاوية</td><td>توزيع الشبكة كلها أفقياً حين تكون أصغر من الحاوية</td></tr>
+          <tr><td><code>align-self</code></td><td>العنصر</td><td>محاذاة عنصر واحد فقط رأسياً</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="rtl">ملاحظة مهمة للواجهات العربية</h2>
+      <div class="callout">
+        <p>Grid يحترم اتجاه الصفحة. مع <code>dir="rtl"</code> يصبح العمود الأول على اليمين تلقائياً، وترتيب <code>grid-template-areas</code> ينعكس بصرياً. استخدم الخصائص المنطقية مثل <code>margin-inline-start</code> بدل <code>margin-left</code> ليبقى التخطيط سليماً في الاتجاهين.</p>
+      </div>
+
+      <h2 id="tips">أخطاء شائعة تجنّبها</h2>
+      <ul>
+        <li><strong>استخدام Grid لكل شيء:</strong> شريط تنقل من عنصرين لا يحتاج شبكة، Flexbox أكفى.</li>
+        <li><strong>إغفال <code>min-width: 0</code>:</strong> الخلايا التي تحتوي نصاً طويلاً ترفض الانضغاط؛ أضف هذا السطر لعنصر الشبكة.</li>
+        <li><strong>تعويض <code>gap</code> بالهوامش:</strong> سيؤدي إلى مسافة زائدة عند أطراف الشبكة.</li>
+        <li><strong>تعقيد التسميات:</strong> ثلاث مناطق كافية لأغلب الصفحات.</li>
+      </ul>
+
+      <div class="takeaways">
+        <h2>الخلاصة في ثلاث نقاط</h2>
+        <ol>
+          <li>Grid للتخطيط ثنائي الاتجاه، Flexbox لتوزيع العناصر في اتجاه واحد.</li>
+          <li><code>repeat(auto-fit, minmax(260px, 1fr))</code> يمنحك تجاوباً تلقائياً بلا استعلامات وسائط.</li>
+          <li>الأماكن المسمّاة تجعل الكود مقروءاً، وتعديل الهاتف يصبح سطرين فقط.</li>
+        </ol>
+      </div>
+    </article>
+
+    <aside class="side-panel">
+      <h3>في هذه الصفحة</h3>
+      <ul class="toc">
+        <li><a href="#what">Grid أم Flexbox؟</a></li>
+        <li><a href="#basics">الأعمدة والمسافات</a></li>
+        <li><a href="#responsive">تخطيط متجاوب</a></li>
+        <li><a href="#areas">الأماكن المسمّاة</a></li>
+        <li><a href="#align">المحاذاة</a></li>
+        <li><a href="#rtl">الواجهات العربية</a></li>
+        <li><a href="#tips">أخطاء شائعة</a></li>
+      </ul>
+      <div class="author-box">
+        <span class="author-avatar" aria-hidden="true">أ</span>
+        <div><strong>فريق أفق</strong><p>نكتب أدلة عملية عن الويب والمحتوى العربي.</p></div>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="wrap prev-next" aria-label="مقالات أخرى">
+    <a href="start-a-blog.html"><small>المقال السابق</small><strong>كيف تبدأ مدونة ناجحة من الصفر؟</strong></a>
+    <a class="next-link" href="keyboard-shortcuts.html"><small>المقال التالي</small><strong>١٠ اختصارات لوحة مفاتيح توفّر ساعات</strong></a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><strong>أفق</strong><p class="muted">مقالات عربية عن التقنية والإنتاجية والحياة اليومية.</p></div>
+    <ul class="footer-links">
+      <li><a href="../index.html#articles">المقالات</a></li>
+      <li><a href="../index.html#categories">التصنيفات</a></li>
+      <li><a href="../index.html#about">عن المدونة</a></li>
+      <li><a href="../index.html#contact">تواصل</a></li>
+    </ul>
+    <p class="muted small">© <span id="year">٢٠٢٥</span> مدونة أفق — محتوى مكتوب بالعربية.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

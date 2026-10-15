@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أفق — مدونة عربية عن التقنية والإنتاجية والقراءة</title>
+<meta name="description" content="أفق مدونة عربية تنشر مقالات عملية عن التقنية والإنتاجية وتصميم الويب والقراءة والسفر والصحة، بلغة واضحة وخطوات قابلة للتطبيق.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Cpath d='M14 40a18 18 0 0 1 36 0' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='22' r='5' fill='%23fbbf24'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="34" height="34"><rect width="64" height="64" rx="14" fill="currentColor"/><path d="M14 40a18 18 0 0 1 36 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="32" cy="22" r="5" fill="#fbbf24"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>أفق</strong>
+        <small>مدونة للمهتمّين بالتفاصيل</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <a href="#articles">المقالات</a>
+      <a href="#categories">التصنيفات</a>
+      <a href="#about">عن المدونة</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="تبديل الوضع الليلي" title="الوضع الليلي">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></g></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="currentColor"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- الواجهة + المقال المميّز -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">مدونة عربية · تحديث مستمر</p>
+      <h1>أفكار عملية تُكتب بوضوح، وتُطبَّق في نفس اليوم</h1>
+      <p class="lead">مقالات عن التقنية وتصميم الويب والإنتاجية والقراءة والسفر والصحة. بلا حشو، وبلا وعود كبيرة: خطوات مرتّبة تعرف من أين تبدأ وكل ما تحتاجه للتنفيذ.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#articles">تصفّح المقالات</a>
+        <a class="btn btn-ghost" href="#about">ما هي أفق؟</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>٧</strong><span>مقالات كاملة</span></li>
+        <li><strong>٦</strong><span>تصنيفات</span></li>
+        <li><strong>٠</strong><span>إعلانات أو تتبّع</span></li>
+      </ul>
+    </div>
+
+    <article class="featured-card">
+      <span class="badge">أحدث مقال</span>
+      <img class="featured-img" src="assets/cover-blog.svg" alt="رسم توضيحي لمدونة على شاشة حاسوب" width="640" height="360">
+      <h2><a href="posts/start-a-blog.html">كيف تبدأ مدونة ناجحة من الصفر؟ دليل من ٧ خطوات</a></h2>
+      <p>اختيار الموضوع، تسمية النطاق، أول ٣ مقالات، ثم أول ١٠٠ قارئ. دليل مختصر يخلّصك من الحيرة ويجعلك تنشر بدل أن تخطّط.</p>
+      <p class="meta">
+        <span>تصميم</span><span class="dot"></span>
+        <time datetime="2025-01-12">١٢ يناير ٢٠٢٥</time><span class="dot"></span>
+        <span>٩ دقائق قراءة</span>
+      </p>
+    </article>
+  </section>
+
+  <!-- المقالات -->
+  <section class="wrap section" id="articles">
+    <div class="section-head">
+      <div>
+        <h2>أحدث المقالات</h2>
+        <p class="muted">اكتب كلمة في البحث أو اختر تصنيفاً لتضيّق النتائج فوراً.</p>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></g></svg>
+        <label class="sr-only" for="search">ابحث في المقالات</label>
+        <input type="search" id="search" placeholder="ابحث: CSS، النوم، القراءة…" autocomplete="off">
+        <button class="clear-btn" id="clearSearch" type="button" hidden aria-label="إفراغ البحث">×</button>
+      </div>
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+    </div>
+
+    <div class="filters" id="filters" role="tablist" aria-label="تصفية حسب التصنيف">
+      <button class="chip is-active" type="button" data-filter="all" role="tab" aria-selected="true">الكل</button>
+      <button class="chip" type="button" data-filter="تقنية" role="tab" aria-selected="false">تقنية</button>
+      <button class="chip" type="button" data-filter="تصميم" role="tab" aria-selected="false">تصميم</button>
+      <button class="chip" type="button" data-filter="إنتاجية" role="tab" aria-selected="false">إنتاجية</button>
+      <button class="chip" type="button" data-filter="قراءة" role="tab" aria-selected="false">قراءة</button>
+      <button class="chip" type="button" data-filter="سفر" role="tab" aria-selected="false">سفر</button>
+      <button class="chip" type="button" data-filter="صحة" role="tab" aria-selected="false">صحة</button>
+    </div>
+
+    <div class="cards" id="cards">
+
+      <article class="card" data-category="تصميم">
+        <img src="assets/cover-blog.svg" alt="" width="480" height="270" loading="lazy">
+        <div class="card-body">
+          <span class="tag">تصميم</span>
+          <h3><a href="posts/start-a-blog.html">كيف تبدأ مدونة ناجحة من الصفر؟ دليل من ٧ خطوات</a></h3>
+          <p>من اختيار الموضوع إلى أول ١٠٠ قارئ: خطة إطلاق واقعية تنفّذها في نهاية أسبوع وتستمر عليها شهوراً.</p>
+          <p class="meta"><time datetime="2025-01-12">١٢ يناير ٢٠٢٥</time><span class="dot"></span><span>٩ دقائق قراءة</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="تقنية">
+        <img src="assets/cover-grid.svg" alt="" width="480" height="270" loading="lazy">
+        <div class="card-body">
+          <span class="tag">تقنية</span>
+          <h3><a href="posts/css-grid.html">مدخل إلى CSS Grid: صمّم تخطيط الصفحة في سطور</a></h3>
+          <p>الشبكة التي أنهت عصر الطفو (float) والجداول. تعرّف على الأعمدة والصفوف ومساحات التسمية بأمثلة جاهزة للنسخ.</p>
+          <p class="meta"><time datetime="2025-01-05">٥ يناير ٢٠٢٥</time><span class="dot"></span><span>١١ دقيقة قراءة</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="إنتاجية">
+        <img src="assets/cover-keys.svg" alt="" width="480" height="270" loading="lazy">
+        <div class="card-body">
+          <span class="tag">إنتاجية</span>
+          <h3><a href="posts/keyboard-shortcuts.html">١٠ اختصارات لوحة مفاتيح توفّر عليك ساعات كل شهر</a></h3>
+          <p>من التنقّل بين التبويبات إلى تعديل النصوص دون لمس الفأرة. عادات صغيرة تعوّض تكلفتها من أول يوم عمل.</p>
+          <p class="meta"><time datetime="2024-12-28">٢٨ ديسمبر ٢٠٢٤</time><span class="dot"></span><span>٧ دقائق قراءة</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="قراءة">
+        <img src="assets/cover-reading.svg" alt="" width="480" height="270" loading="lazy">
+        <div class="card-body">
+          <span class="tag">قراءة</span>
+          <h3><a href="posts/slow-reading.html">القراءة البطيئة: اقرأ أقل وافهم أكثر</a></h3>
+          <p>لست مضطراً لإنهاء كتاب كل أسبوع. طريقة من ثلاث مراحل تجعل ما تقرؤه يبقى معك بعد شهور، مع اختبارات قصيرة.</p>
+          <p class="meta"><time datetime="2024-12-19">١٩ ديسمبر ٢٠٢٤</time><span class="dot"></span><span>٨ دقائق قراءة</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="سفر">
+        <img src="assets/cover-trip.svg" alt="" width="480" height="270" loading="lazy">
+        <div class="card-body">
+          <span class="tag">سفر</span>
+          <h3><a href="posts/chefchaouen.html">شفشاون بعيداً عن صور الإنترنت: خطة ٣ أيام</a></h3>
+          <p>الأزقة الزرقاء ليست كل شيء. مسارات المشي، أوقات الهدوء، وأسواق تتذوّق فيها الطعام المحلي كلٌّ بثمنه الحقيقي.</p>
+          <p class="meta"><time datetime="2024-12-11">١١ ديسمبر ٢٠٢٤</time><span class="dot"></span><span>١٠ دقائق قراءة</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="صحة">
+        <img src="assets/cover-sleep.svg" alt="" width="480" height="270" loading="lazy">
+        <div class="card-body">
+          <span class="tag">صحة</span>
+          <h3><a href="posts/better-sleep.html">نوم أعمق في ٧ خطوات عملية</a></h3>
+          <p>الضوء والحرارة والكافيين وأشياء صغيرة تفعلها قبل السرير. جدول تتبّع أسبوعي يجعل النتيجة واضحة بلا تخمين.</p>
+          <p class="meta"><time datetime="2024-12-02">٢ ديسمبر ٢٠٢٤</time><span class="dot"></span><span>٩ دقائق قراءة</span></p>
+        </div>
+      </article>
+
+      <article class="card" data-category="تصميم">
+        <img src="assets/cover-type.svg" alt="" width="480" height="270" loading="lazy">
+        <div class="card-body">
+          <span class="tag">تصميم</span>
+          <h3><a href="posts/arabic-type.html">الخط العربي على الويب: دليل عملي للواجهات</a></h3>
+          <p>من حجم السطر إلى اتجاه الأسهم. قواعد بسيطة تجعل واجهتك العربية أوضح وأجمل دون أن تتخصص في التصميم.</p>
+          <p class="meta"><time datetime="2024-11-24">٢٤ نوفمبر ٢٠٢٤</time><span class="dot"></span><span>١٢ دقيقة قراءة</span></p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="empty-state" id="emptyState" hidden>
+      <p class="empty-title">لا يوجد مقال يطابق «<span id="emptyTerm"></span>»</p>
+      <p class="muted">جرّب كلمة أقصر، أو اختر تصنيفاً آخر، أو أعد عرض كل المقالات.</p>
+      <button class="btn btn-primary" id="resetFilters" type="button">إعادة عرض الكل</button>
+    </div>
+  </section>
+
+  <!-- التصنيفات -->
+  <section class="wrap section" id="categories">
+    <div class="section-head">
+      <div>
+        <h2>تصفّح حسب التصنيف</h2>
+        <p class="muted">اختر اهتمامك وينقلك مباشرة إلى مقالاته.</p>
+      </div>
+    </div>
+    <div class="cat-grid" id="catGrid">
+      <a class="cat-card" href="#articles" data-cat="تقنية">
+        <span class="cat-emoji" aria-hidden="true">💻</span>
+        <strong>تقنية</strong>
+        <span class="muted">١ مقال</span>
+      </a>
+      <a class="cat-card" href="#articles" data-cat="تصميم">
+        <span class="cat-emoji" aria-hidden="true">🎨</span>
+        <strong>تصميم</strong>
+        <span class="muted">٢ مقال</span>
+      </a>
+      <a class="cat-card" href="#articles" data-cat="إنتاجية">
+        <span class="cat-emoji" aria-hidden="true">⚡</span>
+        <strong>إنتاجية</strong>
+        <span class="muted">١ مقال</span>
+      </a>
+      <a class="cat-card" href="#articles" data-cat="قراءة">
+        <span class="cat-emoji" aria-hidden="true">📚</span>
+        <strong>قراءة</strong>
+        <span class="muted">١ مقال</span>
+      </a>
+      <a class="cat-card" href="#articles" data-cat="سفر">
+        <span class="cat-emoji" aria-hidden="true">🧭</span>
+        <strong>سفر</strong>
+        <span class="muted">١ مقال</span>
+      </a>
+      <a class="cat-card" href="#articles" data-cat="صحة">
+        <span class="cat-emoji" aria-hidden="true">🌿</span>
+        <strong>صحة</strong>
+        <span class="muted">١ مقال</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- عن المدونة -->
+  <section class="wrap section" id="about">
+    <div class="about-grid">
+      <div>
+        <h2>عن مدونة أفق</h2>
+        <p>أفق مكان للمقالات الطويلة التي لا يجد لها القارئ العربي موقعاً واضحاً: كل مقال يشرح فكرته من أساسها، ثم يعطي خطوات مرتّبة يمكن تنفيذها فعلاً.</p>
+        <ul class="check-list">
+          <li><strong>وضوح قبل الزخرفة:</strong> عناوين فرعية وقوائم واقتباسات تُقرأ بسرعة.</li>
+          <li><strong>أمثلة قابلة للنسخ:</strong> خصوصاً في مقالات التقنية والتصميم.</li>
+          <li><strong>بلا تتبّع:</strong> لا إعلانات ولا أدوات تحليل خارجية في هذه الصفحات.</li>
+        </ul>
+      </div>
+      <aside class="about-side">
+        <h3>كيف تقرأ المدونة</h3>
+        <ol class="steps">
+          <li><strong>ابحث</strong> عن موضوع يشغلك الآن.</li>
+          <li><strong>اقرأ</strong> المقال كاملاً مع القوائم المجمّعة في نهايته.</li>
+          <li><strong>طبّق</strong> خطوة واحدة قبل أن تنتقل إلى المقال التالي.</li>
+        </ol>
+        <p class="note">نصيحة: المقالات مرتّبة حسب الاهتمام لا حسب التاريخ، فاختر ما يناسب مشروعك الحالي.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- تواصل -->
+  <section class="wrap section" id="contact">
+    <div class="contact-card">
+      <div>
+        <h2>اقترح موضوعاً أو اسأل</h2>
+        <p class="muted">أرسل موضوعاً تتمنّى قراءته، أو سؤالاً عن مقال. الرد يكون على شكل مقال جديد أو توضيح داخل الصفحة.</p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="cName">الاسم</label>
+          <input type="text" id="cName" name="name" placeholder="مثال: أمين" required>
+          <p class="field-error" id="errName" hidden>اكتب اسماً من حرفين على الأقل.</p>
+        </div>
+        <div class="field">
+          <label for="cEmail">البريد الإلكتروني</label>
+          <input type="email" id="cEmail" name="email" placeholder="name@example.com" required>
+          <p class="field-error" id="errEmail" hidden>اكتب بريداً إلكترونياً صحيحاً.</p>
+        </div>
+        <div class="field">
+          <label for="cMsg">الرسالة</label>
+          <textarea id="cMsg" name="message" rows="4" placeholder="اكتب الموضوع المقترح أو سؤالك…" required></textarea>
+          <p class="field-error" id="errMsg" hidden>اكتب ١٠ أحرف على الأقل.</p>
+        </div>
+        <button class="btn btn-primary" type="submit">تحقّق من الرسالة</button>
+        <p class="form-status" id="formStatus" aria-live="polite" hidden></p>
+        <p class="note">هذه الصفحة ثابتة بلا خادم، لذلك يُتحقّق من الحقول داخل المتصفح فقط ولا يُرسَل أي بريد بعد. ربط النموذج بخدمة بريدية خطوة تالية متاحة عند الطلب.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>أفق</strong>
+      <p class="muted">مقالات عربية عن التقنية والإنتاجية والحياة اليومية.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#articles">المقالات</a></li>
+      <li><a href="#categories">التصنيفات</a></li>
+      <li><a href="#about">عن المدونة</a></li>
+      <li><a href="#contact">تواصل</a></li>
+    </ul>
+    <p class="muted small">© <span id="year">٢٠٢٥</span> مدونة أفق — محتوى مكتوب بالعربية.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="العودة إلى الأعلى">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
